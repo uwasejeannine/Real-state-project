@@ -34,7 +34,7 @@ const PropertyDetails = ({
           {isVerified && <GoVerified />}
         </Box>
         <Text fontWeight="bold" fontSize="lg">
-          AED {price} {rentFrequency && `/${rentFrequency}`}
+          RWF {price} {rentFrequency && `/${rentFrequency}`}
         </Text>
         <Spacer />
         <Avatar size="sm" src={agency?.logo?.url}></Avatar>
@@ -135,3 +135,6 @@ export async function getServerSideProps({ params: { id } }) {
     },
   };
 }
+
+// https://github.com/adrianhajdin/projects_realestate
+// https://www.youtube.com/watch?v=y47gYvXchXM
