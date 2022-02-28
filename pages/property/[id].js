@@ -1,6 +1,6 @@
 import { Box, Flex, Spacer, Text } from "@chakra-ui/layout";
 import { Avatar } from "@chakra-ui/avatar";
-import { FaBed, FaBath } from "react-icons/fa";
+import { FaBed, FaBath, FaMapMarkerAlt } from "react-icons/fa";
 import { BsGridFill } from "react-icons/bs";
 import { GoVerified } from "react-icons/go";
 import millify from "millify";
@@ -47,7 +47,8 @@ const PropertyDetails = ({
         color="blue.400"
       >
         {rooms}
-        <FaBed /> | {baths} <FaBath /> | {millify(area)} sqft <BsGridFill />
+        <FaBed /> | {baths} <FaBath /> <FaMapMarkerAlt />
+        {/* <FaBed /> | {baths} <FaBath /> | {millify(area)} sqft <BsGridFill /> */}
       </Flex>
     </Box>
     <Box marginTop="2">

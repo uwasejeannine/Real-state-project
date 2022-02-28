@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Box, Flex, Text } from "@chakra-ui/layout";
 import { Avatar } from "@chakra-ui/avatar";
-import { FaBed, FaBath } from "react-icons/fa";
+import { FaBed, FaBath, FaMapMarkerAlt } from "react-icons/fa";
 import { BsGridFill } from "react-icons/bs";
 import { GoVerified } from "react-icons/go";
 import millify from "millify";
@@ -62,7 +62,8 @@ const Property = ({
           color="blue.400"
         >
           {rooms}
-          <FaBed /> | {baths} <FaBath /> | {millify(area)} sqft <BsGridFill />
+          <FaBed /> | {baths} <FaBath /> <FaMapMarkerAlt />
+          {/* <FaBed /> | {baths} <FaBath /> <FaMapMarkerAlt /> | {millify(area)}{" "} */}
         </Flex>
         <Text fontSize="lg">
           {title.length > 30 ? title.substring(0, 30) + "..." : title}
@@ -73,3 +74,6 @@ const Property = ({
 );
 
 export default Property;
+
+// https://github.com/adrianhajdin/projects_realestate
+// https://www.youtube.com/watch?v=y47gYvXchXM
